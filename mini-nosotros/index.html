@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Nosotros: Reina & Alexander</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sky-layer" aria-hidden="true">
+      <span class="spark spark-1">✦</span>
+      <span class="spark spark-2">♡</span>
+      <span class="spark spark-3">☾</span>
+      <span class="spark spark-4">✧</span>
+      <span class="spark spark-5">♡</span>
+      <span class="spark spark-6">✦</span>
+    </div>
+
+    <section class="opening-screen" id="openingScreen">
+      <div class="intro-copy opening-copy">
+        <p class="eyebrow">Para Reina</p>
+        <h1>Reina Morales Mendiola ❤️</h1>
+        <p>
+          Te hice algo pequeño, pero con mucho de mí. No es una promesa apurada,
+          es una fantasía bonita que me nació imaginar contigo.
+        </p>
+        <button class="primary-button" id="openFutureButton" type="button">
+          Abrir nuestro futuro imaginario
+        </button>
+      </div>
+    </section>
+
+    <section class="intro-screen is-hidden" id="intro">
+      <div class="intro-copy">
+        <p class="eyebrow">Mini Nosotros: Reina & Alexander</p>
+        <h1>Si algún día la vida nos regala mini nosotros...</h1>
+        <p>
+          Reina Morales Mendiola, Aries nacida el 19 de abril. Alexander Ortiz,
+          Cáncer nacido el 19 de julio. Fuego y agua. Carácter y corazón. Una
+          mezcla peligrosa, tierna y probablemente muy difícil de criar... pero
+          hermosa. ❤️
+        </p>
+        <button class="primary-button" id="startButton" type="button">
+          Imaginar nuestro futuro
+        </button>
+      </div>
+    </section>
+
+    <main class="main-content is-hidden" id="mainContent">
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Fuego, luna y una fantasía bonita</p>
+          <h2>Pequeñas herencias de amor</h2>
+        </div>
+        <div class="card-grid" id="inheritanceCards"></div>
+      </section>
+
+      <section class="section-block prediction-section">
+        <div class="section-heading">
+          <p class="eyebrow">Astrología imaginaria</p>
+          <h2>Predicción astrológica de nuestro mini amor</h2>
+          <p>
+            Según la ciencia altamente dudosa pero románticamente aceptada de
+            nuestra imaginación, un mini nosotros tendría una combinación
+            peligrosa: el fuego de Aries de su mamá y el corazón lunar de Cáncer
+            de su papá.
+          </p>
+        </div>
+        <div class="prediction-grid" id="predictionCards"></div>
+      </section>
+
+      <section class="section-block roulette-section" aria-labelledby="rouletteTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Ruleta principal</p>
+          <h2 id="rouletteTitle">¿Qué heredaría nuestro bebé?</h2>
+        </div>
+        <div class="roulette-panel">
+          <div class="spinner-card" id="inheritanceSpinner" aria-hidden="true">
+            <span>🔥</span>
+            <span>☾</span>
+            <span>❤</span>
+          </div>
+          <p class="roulette-result" id="inheritanceResult" aria-live="polite">
+            Toca el botón y dejemos que el futuro juegue un ratito.
+          </p>
+          <button class="primary-button" id="spinInheritance" type="button">
+            Girar ruleta del amor
+          </button>
+        </div>
+      </section>
+
+      <section class="section-block roulette-section" aria-labelledby="lookTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Parecido secreto</p>
+          <h2 id="lookTitle">¿A quién se parecería más?</h2>
+        </div>
+        <div class="roulette-panel compact">
+          <div class="spinner-card small" id="lookSpinner" aria-hidden="true">
+            <span>✨</span>
+            <span>👀</span>
+            <span>☾</span>
+          </div>
+          <p class="roulette-result" id="lookResult" aria-live="polite">
+            Aquí se revela el parecido más peligroso.
+          </p>
+          <button class="secondary-button" id="spinLook" type="button">
+            Descubrir parecido
+          </button>
+        </div>
+      </section>
+
+      <section class="section-block roulette-section" aria-labelledby="nameTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Apodo del destino</p>
+          <h2 id="nameTitle">Nombre secreto del mini nosotros</h2>
+        </div>
+        <div class="roulette-panel compact">
+          <div class="spinner-card small" id="nameSpinner" aria-hidden="true">
+            <span>🌙</span>
+            <span>💫</span>
+            <span>🔥</span>
+          </div>
+          <p class="roulette-result" id="nameResult" aria-live="polite">
+            Un apodo espera escondido entre fuego y luna.
+          </p>
+          <button class="secondary-button" id="spinName" type="button">
+            Descubrir apodo
+          </button>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Documento oficial del corazón</p>
+          <h2>Contrato emocional de futuros papás</h2>
+        </div>
+        <article class="contract-card">
+          <ol id="contractClauses"></ol>
+          <div class="signature-block">
+            <p>Reina Morales Mendiola — Fuego oficial.</p>
+            <p>Alexander Ortiz — Corazón lunar.</p>
+            <p>Testigo: el amor haciendo travesuras. ❤️</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block future-message-section">
+        <div class="section-heading">
+          <p class="eyebrow">Cartitas que todavía no existen</p>
+          <h2>Mensajitos del futuro</h2>
+        </div>
+        <div class="message-card">
+          <p id="futureMessage" aria-live="polite">
+            Toca el botón para leer un mensajito imaginado con ternura.
+          </p>
+          <button class="secondary-button" id="futureButton" type="button">
+            Leer mensajito del futuro
+          </button>
+        </div>
+      </section>
+
+      <section class="section-block secret-section">
+        <div class="section-heading">
+          <p class="eyebrow">Solo para ella</p>
+          <h2>Mensaje secreto para Reina</h2>
+        </div>
+        <div class="message-card secret-card">
+          <button class="secondary-button" id="secretButton" type="button">
+            Leer solo si estás preparada
+          </button>
+          <p class="secret-text" id="secretMessage" aria-live="polite" hidden>
+            Amor, capaz esta página parece un juego, pero en el fondo tiene algo
+            muy mío: mi forma de imaginarte en mi vida. No quiero apurar el
+            tiempo, solo quería regalarte una sonrisa y decirte que pensar en un
+            futuro contigo se siente bonito. ❤️
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block closing-section">
+        <div class="section-heading">
+          <p class="eyebrow">Cierre</p>
+          <h2>Una fantasía bonita</h2>
+          <p>
+            Tal vez esto solo sea una fantasía bonita, amor... pero imaginar un
+            futuro contigo tiene algo que me toca el corazón. No sé qué planes
+            tenga la vida, pero si algún día escribe algo así para nosotros,
+            ojalá tenga tu risa, mi amor por vos y esa forma tan nuestra de
+            elegirnos. ❤️
+          </p>
+        </div>
+        <button class="primary-button" id="saveButton" type="button">
+          Guardar este pedacito de futuro
+        </button>
+        <p class="saved-note" id="savedNote" aria-live="polite"></p>
+        <p class="capture-note">
+          Sacale captura a la parte que más te hizo sonreír y mandámela 😌❤️
+        </p>
+      </section>
+    </main>
+
+    <div class="burst-layer" id="burstLayer" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
